@@ -1,0 +1,114 @@
+html
+    head 
+        title Render HTML Using PUG 
+        // basic
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        // mobile metas
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name='viewport' content='initial-scale=1, maximum-scale=1')
+        // site metas
+        //title makar
+        meta(name='keywords' content='')
+        meta(name='description' content='')
+        meta(name='author' content='')
+        // bootstrap css
+        link(rel='stylesheet' href='/css/bootstrap.min.css')
+        // style css
+        link(rel='stylesheet' href='css/style.css' type='text/css')
+        // Responsive
+        link(rel='stylesheet' href='css/responsive.css')
+        // fevicon
+        link(rel='icon' href='images/fevicon.png' type='image/gif')
+        // Scrollbar Custom CSS
+        link(rel='stylesheet' href='css/jquery.mCustomScrollbar.min.css')
+        // Tweaks for older IEs
+        link(rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+  
+    body 
+           
+        a(href='/')
+            h1 Home
+        h3 Most Negative Post: #{Sorted[0].Title}
+
+        script.
+            function testFunc2(){
+                //var listStuff = document.getElementById('list');
+                //listStuff.style.visibility = "visible";
+
+                //var test = document.getElementById('test');
+                //test.innerHTML= 'Hello';
+
+                //var newElement = document.getElementById("demo");
+                //demo.innerHTML += "MOUNTAINS";
+
+                var search = document.getElementById('searchBox').value;
+                var table = document.getElementById('stockTable');
+
+                //Set color to white
+                for(let i = 1; i < table.rows.length; i++){
+                    var objCells = table.rows.item(i).cells;
+                    
+                    table.rows.item(i).style.backgroundColor = 'white';
+                    for (let j = 0; j < objCells.length; j++){
+                        objCells.item(j).style.backgroundColor = 'white';
+                        console.log('Change to white');
+                    }
+                }
+
+                for(let i = 1; i < table.rows.length; i++){
+                    var objCells = table.rows.item(i).cells;
+                    
+                    for (let j = 0; j < objCells.length; j++){
+                        if(objCells.item(j).innerHTML == search){
+                            document.getElementById(search).style.backgroundColor = 'orange';
+                            console.log('Change to orange');
+                            break;
+                        }
+                        //console.log(objCells.item(j).innerHTML);
+                    }
+                }
+                alert('AHHHH');  
+            }
+        button(type='button', onclick='testFunc2()') Submit    
+        input(type='text', id='searchBox', placeholder='Stock Acronym')
+
+        table(style='padding:10px', id='stockTable') 
+            thead 
+                tr 
+                    th Stock
+                    th Average Score
+                    th Count
+            tbody 
+                each stock in stocks
+                    tr(id= stock.Stock)
+                        td #{stock.Stock}
+                        if stock.Score > 0
+                            td(style= 'color: green') #{stock.Score}
+                        else if stock.Score < 0
+                            td(style= 'color: red') #{stock.Score}
+                        else
+                            td(style= 'color: gold') #{stock.Score}
+                        td #{stock.Count}
+        div(class= 'postList')
+            table
+                thead 
+                    tr
+                        th Title
+                        th Score
+                tbody
+                    each sort in Sorted
+                        tr
+                            td(width = 500) #{sort.Title}
+                            if sort.Score > 0
+                                td(style= 'color: green') #{sort.Score}
+                            else if sort.Score < 0
+                                td(style= 'color: red') #{sort.Score}
+                            else
+                                td(style= 'color: gold') #{sort.Score}
+                        
+        
+
+        ul(id= 'list', style='visibility: hidden')
+            each title in Titles
+                li= title

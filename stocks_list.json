@@ -1,0 +1,422 @@
+[
+    {
+        "stock": "AAPL",
+        "full": "Apple"
+    },
+    {
+        "stock": "ATVI",
+        "full": "Activision Blizzard"
+    },
+    {
+        "stock": "ADBE",
+        "full": "Adobe"
+    },
+    {
+        "stock": "ADI",
+        "full": "Analog Devices"
+    },
+    {
+        "stock": "ADP",
+        "full": "Automatic Data Processing"
+    },
+    {
+        "stock": "ADSK",
+        "full": "Autodesk"
+    },
+    {
+        "stock": "AMD",
+        "full": "Advanced Micro Devices"
+    },
+    {
+        "stock": "AEP",
+        "full": "American Electric Power"
+    },
+    {
+        "stock": "ALGN",
+        "full": "Align Technology"
+    },
+    {
+        "full": "GOOGL",
+        "stock": "Alphabet (Class A)"
+    },
+    {
+        "full": "GOOG",
+        "stock": "Alphabet (Class C)"
+    },
+    {
+        "stock": "AMAT",
+        "full": "Applied Materials, Inc."
+    },
+    {
+        "stock": "AMZN",
+        "full": "Amazon.com"
+    },
+    {
+        "stock": "AMGN",
+        "full": "Amgen"
+    },
+    {
+        "stock": "ADI",
+        "full": "Analog Devices"
+    },
+    {
+        "stock": "ANSS",
+        "full": "Ansys"
+    },
+    {
+        "stock": "ASML",
+        "full": "ASML Holding"
+    },
+    {
+        "stock": "TEAM",
+        "full": "Atlassian"
+    },
+    {
+        "stock": "AVGO",
+        "full": "Broadcom"
+    },
+    {
+        "stock": "BBBY",
+        "full": "Bed Bath & Beyond"
+    },
+    {
+        "stock": "BIDU",
+        "full": "Baidu"
+    },
+    {
+        "stock": "BIIB",
+        "full": "Biogen"
+    },
+    {
+        "stock": "BKNG",
+        "full": "Booking Holdings"
+    },
+    {
+        "stock": "CDNS",
+        "full": "Cadence Design Systems"
+    },
+    {
+        "stock": "CDW",
+        "full": "CDW Corp."
+    },
+    {
+        "stock": "CERN",
+        "full": "Cerner"
+    },
+    {
+        "stock": "CHKP",
+        "full": "Check Point"
+    },
+    {
+        "stock": "CHTR",
+        "full": "Charter Communications"
+    },
+    {
+        "stock": "CMCSA",
+        "full": "Comcast"
+    },
+    {
+        "stock": "CPRT",
+        "full": "Copart"
+    },
+    {
+        "stock": "COST",
+        "full": "Costco"
+    },
+    {
+        "stock": "CPRT",
+        "full": "Baidu"
+    },
+    {
+        "stock": "CRWD",
+        "full": "CrowdStrike"
+    },
+    {
+        "stock": "CSCO",
+        "full": "Cisco Systems"
+    },
+    {
+        "stock": "CSX",
+        "full": "CSX Corporation"
+    },
+    {
+        "stock": "CTAS",
+        "full": "Cintas"
+    },
+    {
+        "stock": "CTSH",
+        "full": "Cognizant"
+    },
+    {
+        "stock": "DLTR",
+        "full": "Dollar Tree"
+    },
+    {
+        "stock": "DOCU",
+        "full": "DocuSign"
+    },
+    {
+        "stock": "DXCM",
+        "full": "DexCom"
+    },
+    {
+        "stock": "EA",
+        "full": "Electronic Arts"
+    },
+    {
+        "stock": "EBAY",
+        "full": "eBay"
+    },
+    {
+        "stock": "EXC",
+        "full": "Exelon"
+    },
+    {
+        "stock": "FAST",
+        "full": "Fastenal"
+    },
+    {
+        "stock": "FISV",
+        "full": "Fiserv"
+    },
+    {
+        "stock": "FOX",
+        "full": "Fox Corporation (Class B)"
+    },
+    {
+        "stock": "FOXA",
+        "full": "Fox Corporation (Class A)"
+    },
+    {
+        "stock": "GILD",
+        "full": "Gilead Sciences"
+    },
+    {
+        "stock": "HON",
+        "full": "Honeywell"
+    },
+    {
+        "stock": "IDXX",
+        "full": "Idexx Laboratories"
+    },
+    {
+        "stock": "ILMN",
+        "full": "Illumina"
+    },
+    {
+        "stock": "INCY",
+        "full": "Incyte"
+    },
+    {
+        "stock": "INTC",
+        "full":"Intel"
+    },
+    {
+        "stock": "INTU",
+        "full": "Intuit"
+    },
+    {
+        "stock": "ISRG",
+        "full": "Intuitive Surgical"
+    },
+    {
+        "stock": "JD",
+        "full": "JD.com"
+    },
+    {
+        "stock": "KDP",
+        "full": "Keurig Dr Pepper"
+    },
+    {
+        "stock": "KHC",
+        "full": "Kraft Heinz"
+    },
+    {
+        "stock": "KLAC",
+        "full": "KLA Corporation"
+    },
+    {
+        "stock": "LRCX",
+        "full": "Lam Research"
+    },
+    {
+        "stock": "LULU",
+        "full": "Lululemon Athletica"
+    },
+    {
+        "stock": "MAR",
+        "full": "Marriott International"
+    },
+    {
+        "stock": "MRVL",
+        "full": "Marvell Technology"
+    },
+    {
+        "stock": "MTCH",
+        "full": "Match Group"
+    },
+    {
+        "stock": "MCHP",
+        "full": "Microchip Technology"
+    },
+    {
+        "stock": "MDLZ",
+        "full": "Mondelez International"
+    },
+    {
+        "stock": "MELI",
+        "full": "MercadoLibre"
+    },
+    {
+        "stock": "META",
+        "full": "Meta Platforms"
+    },
+    {
+        "stock": "MU",
+        "full": "Micron Technology"
+    },
+    {
+        "stock": "MSFT",
+        "full": "Microsoft"
+    },
+    {
+        "stock": "MNST",
+        "full": "Monster Beverage"
+    },
+    {
+        "stock": "MRNA",
+        "full": "Moderna"
+    },
+    {
+        "stock": "NFLX",
+        "full": "Netflix"
+    },
+    {
+        "stock": "NTES",
+        "full": "NetEase"
+    },
+    {
+        "stock": "NVDA",
+        "full": "Nvidia"
+    },
+    {
+        "stock": "NXP Semiconductors",
+        "full": "NXPI"
+    },
+    {
+        "stock": "O'Reilly Automotive",
+        "full": "ORLY"
+    },
+    {
+        "stock": "OKTA",
+        "full": "Okta"
+    },
+    {
+        "stock": "PCAR",
+        "full": "Paccar"
+    },
+    {
+        "stock": "PYPL",
+        "full": "PayPal"
+    },
+    {
+        "stock": "PAYX",
+        "full": "Paychex"
+    },
+    {
+        "stock": "PDD",
+        "full": "Pinduoduo Interactive"
+    },
+    {
+        "stock": "PEP",
+        "full": "PepsiCo"
+    },
+    {
+        "stock": "PTON",
+        "full": "Peloton"
+    },
+    {
+        "stock": "QCOM",
+        "full": "Qualcomm"
+    },
+    {
+        "stock": "REGN",
+        "full": "Regeneron Pharmaceuticals"
+    },
+    {
+        "stock": "ROST",
+        "full": "Ross Stores"
+    },
+    {
+        "stock": "SBUX",
+        "full": "Starbucks"
+    },
+    {
+        "stock": "SGEN",
+        "full": "Seagen"
+    },
+    {
+        "stock": "SIRI",
+        "full": "Sirius XM"
+    },
+    {
+        "stock": "SWKS",
+        "full": "Skyworks Solutions"
+    },
+    {
+        "stock": "SNPS",
+        "full": "Synopsys"
+    },
+    {
+        "stock": "SPLK",
+        "full": "Splunk"
+    },
+    {
+        "stock": "TCOM",
+        "full": "Trip.com Group"
+    },
+    {
+        "stock": "TSLA",
+        "full": "Tesla"
+    },
+    {
+        "stock": "TXN",
+        "full": "Texas Instruments"
+    },
+    {
+        "stock": "TMUS",
+        "full": "T-Mobile US"
+    },
+    {
+        "stock": "VRTX",
+        "full": "Vertex Pharmaceuticals"
+    },
+    {
+        "stock": "VRSK",
+        "full": "Verisk Analytics"
+    },
+    {
+        "stock": "VRSN",
+        "full": "Verisign"
+    },
+    {
+        "stock": "WBA",
+        "full": "Walgreens Boots Alliance"
+    },
+    {
+        "stock": "WDAY",
+        "full": "Workday"
+    },
+    {
+        "stock": "XEL",
+        "full": "Xcel Energy"
+    },
+    {
+        "stock": "XLNX",
+        "full": "Xilinx"
+    },
+    {
+        "stock": "ZM",
+        "full": "Zoom Video Communications"
+    }
+]

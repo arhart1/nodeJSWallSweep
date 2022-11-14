@@ -1,0 +1,189 @@
+doctype html
+head
+  // basic
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  // mobile metas
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='viewport' content='initial-scale=1, maximum-scale=1')
+  // site metas
+  title makar
+  meta(name='keywords' content='')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  // bootstrap css
+  link(rel='stylesheet' href='/css/bootstrap.min.css')
+  // style css
+  link(rel='stylesheet' href='css/style.css' type='text/css')
+  // Responsive
+  link(rel='stylesheet' href='css/responsive.css')
+  // fevicon
+  link(rel='icon' href='images/fevicon.png' type='image/gif')
+  // Scrollbar Custom CSS
+  link(rel='stylesheet' href='css/jquery.mCustomScrollbar.min.css')
+  // Tweaks for older IEs
+  link(rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css' media='screen')
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+// body
+// loader
+.loader_bg
+  .loader
+    img(src='images/loading.gif' alt='#')
+// end loader
+#mySidepanel.sidepanel
+  a.closebtn(href='javascript:void(0)' onclick='closeNav()') &times;
+  a(href='WallSweep.html') Home
+  a(href='#about') About
+  a(href='#team') Our Team
+// header
+header
+  // header inner
+  .header(style='max-height: 200px;')
+    div
+      .col-xl-4.col-lg-4.col-md-4.col-sm-4
+        .left_button
+          button.openbtn(onclick='openNav()')
+            img(src='images/menu_icon.png' alt='#')
+      .row
+        .col-xl-4.col-lg-4.col-md-4.col-sm-4
+        .col-xl-4.col-lg-4.col-md-4.col-sm-4.col.logo_section
+          .full
+            .center-desk
+              .logo
+                a(href='WallSweep.html')
+                  img(src='images/WSLogoShadow.png' alt='#')
+// end header inner
+// end header
+// banner
+section.banner_main
+  #banner1
+    div
+      .container
+        div
+          .text-bg
+            a.read_more(href='/index') Search
+// end banner
+// about section
+#about.about
+  .container
+    .row
+      .col-md-5
+        .row
+          .col-md-12
+            .titlepage
+              h2 About
+              p
+                | sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  sit amet, consectetur adipiscing elit, sed do
+      .col-md-7
+        .about_right
+          figure
+            img(src='images/about_right.jpg' alt='#')
+// about section
+// Our  team section
+#team.team
+  .container
+    .row
+      .col-md-12
+        .titlepage
+          h2 Our Team
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    .row
+      .col-sm-4
+        .team_box
+          figure
+            img(src='images/team_img1.jpg' alt='#')
+          .social_box
+            ul.social_team
+            h3 Austin Hart
+            p Programmer
+      .col-sm-4
+        .team_box
+          figure
+            img(src='images/team_img1.jpg' alt='#')
+          .social_box
+            ul.social_team
+            h3 Austin Hart
+            p Programmer
+      .col-sm-4
+        .team_box
+          figure
+            img(src='images/team_img1.jpg' alt='#')
+          .social_box
+            ul.social_team
+            h3 Austin Hart
+            p Programmer
+      .col-sm-4
+        .team_box
+          figure
+            img(src='images/team_img1.jpg' alt='#')
+          .social_box
+            ul.social_team
+            h3 Austin Hart
+            p Programmer
+// end Our team section
+// footer
+footer
+  .footer
+    .container
+      .row
+        .col-md-4
+          h3 Useful links
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+        .col-md-4
+          .fid_box
+            h3 Find us  
+            ul.location_icon
+              li
+                a(href='#')
+                  i.fa.fa-map-marker(aria-hidden='true')
+                br
+                |  It is a long established fact that a 
+                br
+                | reader will be distracted
+              li
+                a(href='#')
+                  i.fa.fa-phone(aria-hidden='true')
+                br
+                |                               (+71) 1234567890
+                br
+                |  (+71) 1234567890
+              li
+                a(href='#')
+                  i.fa.fa-envelope(aria-hidden='true')
+                br
+                |  demo@gmail.com
+        .col-md-4
+          .fid_box
+            h3 News letter
+            form.news_form
+              input.letter_form(placeholder=' Email' type='text' name='Email')
+              button.sumbit Subscribe
+    .copyright
+      .container
+        .row
+          .col-md-12
+            p &copy; 2022 All Rights Reserved. Design by WallSweep.
+// end footer
+// Javascript files
+script(src='js/jquery.min.js')
+script(src='js/popper.min.js')
+script(src='js/bootstrap.bundle.min.js')
+script(src='js/jquery-3.0.0.min.js')
+// sidebar
+script(src='js/jquery.mCustomScrollbar.concat.min.js')
+script(src='js/custom.js')
+script.
+  function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+  }
+  function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+  }
+// google map js
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap')
+// end google map js
