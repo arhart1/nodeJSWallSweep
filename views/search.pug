@@ -1,0 +1,176 @@
+doctype html
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Results, description, Most Positive, Neutral, Most Negative')
+  meta(name='description' content='')
+  title Search
+  link(rel='stylesheet' href='nicepage.css' media='screen')
+  link(rel='stylesheet' href='Search.css' media='screen')
+  script.u-script(type='text/javascript' src='jquery.js' defer='')
+  script.u-script(type='text/javascript' src='nicepage.js' defer='')
+  meta(name='generator' content='Nicepage 4.21.12, nicepage.com')
+  link#u-theme-google-font(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i')
+  script(type='application/ld+json').
+    {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "",
+    "logo": "images/WallSweep.png"
+    }
+  meta(name='theme-color' content='#478ac9')
+  meta(property='og:title' content='Search')
+  meta(property='og:type' content='website')
+header#sec-73d4.u-clearfix.u-header.u-header
+  .u-clearfix.u-sheet.u-sheet-1
+    a.u-align-right.u-image.u-logo.u-image-1(href='/' data-image-width='500' data-image-height='500' title='Wallsweep')
+      img.u-logo-image.u-logo-image-1(src='images/WallSweep.png')
+    nav.u-align-left.u-font-size-14.u-menu.u-menu-hamburger.u-nav-spacing-25.u-offcanvas.u-menu-1(data-responsive-from='XL')
+      .menu-collapse
+        a.u-button-style.u-nav-link(href='#' style='padding: 18px 30px; font-size: calc(1em + 36px);')
+          svg.u-svg-link(preserveaspectratio='xMidYMin slice' viewbox='0 0 302 302' style='')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#svg-7b92')
+          svg#svg-7b92.u-svg-content(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewbox='0 0 302 302' style='enable-background:new 0 0 302 302;' xml:space='preserve')
+            g
+              rect(y='36' width='302' height='30')
+              rect(y='236' width='302' height='30')
+              rect(y='136' width='302' height='30')
+      .u-custom-menu.u-nav-container
+        ul.u-nav.u-unstyled.u-nav-1
+          li.u-nav-item
+            a.u-button-style.u-nav-link(href='Wallsweep.html#sec-d388' style='padding-right: 4px;') Home
+          li.u-nav-item
+            a.u-button-style.u-nav-link(href='Wallsweep.html#carousel_15ea' style='padding-right: 4px;') About
+          li.u-nav-item
+            a.u-button-style.u-nav-link(href='Wallsweep.html#carousel_8e8e' style='padding-right: 4px;') Our Team
+      .u-custom-menu.u-nav-container-collapse
+        .u-align-center.u-container-style.u-grey-30.u-inner-container-layout.u-opacity.u-opacity-95.u-sidenav
+          .u-inner-container-layout.u-sidenav-overflow
+            .u-menu-close
+            ul.u-align-center.u-nav.u-popupmenu-items.u-spacing-39.u-text-custom-color-1.u-unstyled.u-nav-2
+              li.u-nav-item
+                a.u-button-style.u-nav-link(href='Wallsweep.html#sec-d388') Home
+              li.u-nav-item
+                a.u-button-style.u-nav-link(href='Wallsweep.html#carousel_15ea') About
+              li.u-nav-item
+                a.u-button-style.u-nav-link(href='Wallsweep.html#carousel_8e8e') Our Team
+        .u-black.u-menu-overlay.u-opacity.u-opacity-70
+section#sec-c6a3.u-clearfix.u-custom-color-1.u-section-1
+  .u-clearfix.u-sheet.u-sheet-1
+    h2.u-text.u-text-default.u-text-1 Results
+    input.u-text.u-text-default.u-text-2(type='text', id='searchBox', placeholder='Stock Acronym',style='width:200px; color:black')
+    button.u-text.u-text-default.u-text-2(type='button', onclick='search()', style='color:black') Find
+    .u-expanded-width.u-list.u-list-1
+      table.tableSearch(style='text-align:center')
+        tbody
+          th(style='background-color: black') Stock 
+          th(style='background-color: black') Average Score 
+          th(style='background-color: black') Mentions
+            tr(id='searchRow')
+              td(style='height:20px', id='searchStock')
+              td(style='height:20px', id='searchScore')
+              td(style='height:20px', id='searchCount')
+      .u-repeater.u-repeater-1(style='margin-left:auto; margin-right:auto; padding-left:115px')
+        .u-container-align-center.u-container-style.u-list-item.u-repeater-item(style='margin-left:auto; margin-right:auto')
+          .u-container-layout.u-similar-container.u-container-layout-1
+            h2(style='padding-bottom: 15px').u-align-center.u-custom-item.u-text.u-text-3 Most Positive
+              .u-section-1.u-layout-cell-1
+                table.tableStock(style='text-align:center', id='posTable')
+                  tbody
+                    th(style='background-color: #0e5b19') Stock 
+                    th(style='background-color: #0e5b19') Average Score 
+                    th(style='background-color: #0e5b19') Mentions
+                    tr(style='height: 10px')
+                    each stock in stocks
+                      if stock.Score > 0 
+                        tr(id= stock.Stock, style='height:60px')
+                          td #{stock.Stock}
+                          td #{stock.Score}
+                          td #{stock.Count}
+          .u-container-layout.u-similar-container.u-container-layout-2
+            h2(style='padding-bottom: 15px').u-align-center.u-custom-item.u-text.u-text-default.u-text-4 Neutral
+              .u-section-1.u-layout-cell-2
+                table.tableStock(style='text-align:center', id='neutralTable')
+                  tbody
+                    th(style='background-color: #b59b07') Stock 
+                    th(style='background-color: #b59b07') Average Score 
+                    th(style='background-color: #b59b07') Mentions
+                    tr(style='height: 10px')
+                    each stock in stocks
+                      if stock.Score == 0 
+                        tr(id= stock.Stock, style='height:60px')
+                          td #{stock.Stock}
+                          td #{stock.Score}
+                          td #{stock.Count}
+          .u-container-layout.u-similar-container.u-container-layout-3
+            h2(style='padding-bottom: 15px').u-align-center.u-custom-item.u-text.u-text-default.u-text-5 Most Negative
+              .u-section-1.u-layout-cell-3
+                table.tableStock(style='text-align:center', id='negTable')
+                  tbody
+                    th(style='background-color: #db545a') Stock 
+                    th(style='background-color: #db545a') Average Score 
+                    th(style='background-color: #db545a') Mentions
+                    tr(style='height: 10px')
+                    each stock in stocks
+                      if stock.Score < 0 
+                        tr(id= stock.Stock, style='height:60px')
+                          td #{stock.Stock}
+                          td #{stock.Score}
+                          td #{stock.Count}
+    h2.u-text.u-text-default.u-text-2 WARNING: WallSweep is purely for entertainment purposes. Actual implementation is subject to market risk.
+  script.
+    function search(){
+      //Save the search box value and each table to variables
+      var search = document.getElementById('searchBox').value;
+      search = search.toUpperCase();
+      var posTable = document.getElementById('posTable');
+      var neutralTable = document.getElementById('neutralTable');
+      var negTable = document.getElementById('negTable');
+
+      var found = false;
+
+      //Positive table search
+      for(let i = 1; i < posTable.rows.length; i++){
+        var objCells = posTable.rows.item(i).cells;
+        for (let j = 0; j < objCells.length; j++){
+            if(objCells.item(j).innerHTML == search){
+              document.getElementById('searchStock').innerHTML = objCells.item(0).innerHTML;
+              document.getElementById('searchScore').innerHTML = objCells.item(1).innerHTML;
+              document.getElementById('searchCount').innerHTML = objCells.item(2).innerHTML;
+              document.getElementById('searchRow').style.backgroundColor = '#0e5b19'
+              found = true;
+            }
+        }
+      }
+
+      //Neutral table search
+      for(let i = 1; i < neutralTable.rows.length; i++){
+        var objCells = neutralTable.rows.item(i).cells;       
+        for (let j = 0; j < objCells.length; j++){
+            if(objCells.item(j).innerHTML == search){
+              document.getElementById('searchStock').innerHTML = objCells.item(0).innerHTML;
+              document.getElementById('searchScore').innerHTML = objCells.item(1).innerHTML;
+              document.getElementById('searchCount').innerHTML = objCells.item(2).innerHTML;
+              document.getElementById('searchRow').style.backgroundColor = '#b59b07'
+              found = true;
+            }
+        }
+      }
+
+      //Negative table search
+      for(let i = 1; i < negTable.rows.length; i++){
+        var objCells = negTable.rows.item(i).cells;     
+        for (let j = 0; j < objCells.length; j++){
+            if(objCells.item(j).innerHTML == search){
+              document.getElementById('searchStock').innerHTML = objCells.item(0).innerHTML;
+              document.getElementById('searchScore').innerHTML = objCells.item(1).innerHTML;
+              document.getElementById('searchCount').innerHTML = objCells.item(2).innerHTML;
+              document.getElementById('searchRow').style.backgroundColor = '#db545a'
+              found = true;
+            }
+        }
+      }
+      if(found == false){
+        alert('No information found for ' + search);
+      }
+    }
