@@ -21,6 +21,7 @@ head
   meta(name='theme-color' content='#478ac9')
   meta(property='og:title' content='Wallsweep')
   meta(property='og:type' content='website')
+
 header#sec-73d4.u-clearfix.u-header.u-header
   .u-clearfix.u-sheet.u-sheet-1
     a.u-align-right.u-image.u-logo.u-image-1(href='/' data-image-width='500' data-image-height='500' title='Wallsweep')
@@ -55,8 +56,26 @@ header#sec-73d4.u-clearfix.u-header.u-header
               li.u-nav-item
                 a.u-button-style.u-nav-link(href='Wallsweep.html#carousel_8e8e') Our Team
         .u-black.u-menu-overlay.u-opacity.u-opacity-70
+
 section#sec-d388.u-clearfix.u-image.u-section-1(data-image-width='1920' data-image-height='1080')
-  .u-clearfix.u-expanded-width.u-gutter-0.u-layout-wrap.u-layout-wrap-1
+  body(onload= "loadthis()")
+    #loader
+      h1.loaderText(style='color:white; font-family:Sans-serif')
+        span.let1 C
+        span.let2 A
+        span.let3 L
+        span.let4 C
+        span.let5 U
+        span.let6 L
+        span.let7 A
+        span.let8 T
+        span.let9 I
+        span.let10 N
+        span.let11 G
+        span.let9 .
+        span.let10 .
+        span.let11 .
+    .u-clearfix.u-expanded-width.u-gutter-0.u-layout-wrap.u-layout-wrap-1
     .u-gutter-0.u-layout
       .u-layout-col
         .u-align-left.u-container-style.u-layout-cell.u-size-30.u-layout-cell-1
@@ -64,7 +83,7 @@ section#sec-d388.u-clearfix.u-image.u-section-1(data-image-width='1920' data-ima
             img.u-align-center.u-image.u-image-contain.u-image-default.u-preserve-proportions.u-image-1(src='images/WSLogoShadow.png' alt='' data-image-width='500' data-image-height='500')
         .u-container-style.u-layout-cell.u-size-30.u-layout-cell-2
           .u-container-layout.u-valign-top.u-container-layout-2
-            a.u-active-white.u-align-center.u-border-none.u-btn.u-btn-round.u-button-style.u-custom-color-4.u-hover-white.u-radius-50.u-text-active-black.u-text-body-alt-color.u-text-hover-palette-1-dark-3.u-btn-1(href='search' data-animation-name='customAnimationIn' data-animation-duration='1500' data-animation-delay='500') SEARCH
+            a.u-active-white.u-align-center.u-border-none.u-btn.u-btn-round.u-button-style.u-custom-color-4.u-hover-white.u-radius-50.u-text-active-black.u-text-body-alt-color.u-text-hover-palette-1-dark-3.u-btn-1(href='search' data-animation-name='customAnimationIn' data-animation-duration='1500' data-animation-delay='500' onclick='showLoad()') CLICK TO SWEEP
 section#carousel_15ea.u-clearfix.u-white.u-section-2
   .u-custom-color-4.u-expanded-width.u-shape.u-shape-rectangle.u-shape-1
   .u-clearfix.u-gutter-0.u-layout-wrap.u-layout-wrap-1
@@ -74,7 +93,7 @@ section#carousel_15ea.u-clearfix.u-white.u-section-2
           .u-container-layout.u-container-layout-1
             h1.u-custom-font.u-text.u-text-font.u-text-1 About
             h3.u-text.u-text-font.u-text-2
-              | Wallsweep is a&nbsp;Wallsweep is a&nbsp;Wallsweep is a&nbsp;Wallsweep is a&nbsp;Wallsweep is a&nbsp;Wallsweep is aWallsweep is aWallsweep is a&nbsp;Wallsweep is.
+              | Wallsweep is an AI system that "sweeps" (parses) through the popular subreddit wallstreetbets, and locates posts talking about specific stocks. It then assigns the stocks a score based on how positive or negative the system perceives it.
               br
         .u-align-left.u-container-style.u-layout-cell.u-shape-rectangle.u-size-3-lg.u-size-3-xl.u-size-30-md.u-size-30-sm.u-size-30-xs.u-layout-cell-2(data-animation-name='customAnimationIn' data-animation-duration='1500' data-animation-delay='500')
           .u-container-layout.u-valign-top.u-container-layout-2
@@ -106,3 +125,14 @@ section#carousel_8e8e.u-align-center.u-clearfix.u-white.u-section-3
             h4.u-custom-font.u-text.u-text-black.u-text-font.u-text-5 Rachel Perry
 footer#sec-c983.u-align-center.u-clearfix.u-custom-color-1.u-footer.u-footer
   .u-clearfix.u-sheet.u-sheet-1
+script.
+  var load=document.getElementById("loader");
+  function loadthis(){
+    console.log('I loaded')
+    load.style.display = 'none'
+  }
+  function showLoad(){
+    console.log('Showing')
+    load.style.display = 'inherit'
+  }
+
